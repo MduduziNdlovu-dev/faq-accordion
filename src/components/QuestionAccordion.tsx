@@ -1,6 +1,5 @@
 'use client'
 import { Box, Button, Typography, useTheme } from '@mui/material'
-import Image from 'next/image'
 import React, { useState } from 'react'
 
 interface Props {
