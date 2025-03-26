@@ -20,22 +20,24 @@ const QuestionAccordion = ({questionAnswer}: Props) => {
             flexDirection:"column",
             gap:"1rem",
             padding:"1rem",
-            borderBottom:"1px solid hsla(0, 0.00%, 10.20%, 0.40)",
+            borderBottom:"1px solid hsla(0, 0.00%, 10.20%, 0.09)",
             justifyContent:"center",
             alighnItems:"center",
-            width: "35rem"
+            width: "35rem",
+            marginBottom:"2rem",
         }}
     >
         <Box
             sx={{
                 display:"flex",
                 justifyContent:"space-between",
-                alignItems:"center"
+                alignItems:"center",
             }}
         >
             <Typography 
                 sx={{
                     fontWeight:600,
+                    
                     "&:hover":{
                         color:"#ad25eb"
                     }
