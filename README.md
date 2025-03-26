@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FAQ Accordion Project
 
-## Getting Started
+This project is a solution to the [FAQ Accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The Challenge
+
+In this project, users should be able to:
+
+- Toggle the answer visibility when the question is clicked.
+- Navigate between questions and toggle answers using keyboard navigation.
+- View the interface's optimal layout based on screen size.
+- See hover and focus states for interactive elements.
+
+### Screenshot
+
+![FAQ Accordion Screenshot](![alt text](image.png))
+
+This is a preview of how the FAQ Accordion looks in different screen sizes.
+
+### Links
+
+- Solution URL: [Solution Link](https://github.com/MduduziNdlovu-dev/faq-accordion)
+- Live Site URL: [Live Site Link](https://faq-accordion-two-dusky.vercel.app)
+
+## My Process
+
+### Built With
+
+- React (JS library)
+- Next.js (React framework)
+- Material-UI (for styling components)
+- CSS Flexbox and Grid for layout
+- Mobile-first workflow
+- Custom React hooks for interactivity
+
+### What I Learned
+
+This project allowed me to dive into building dynamic components in React. I gained a deeper understanding of:
+
+- Implementing state management using React's `useState` for toggling answer visibility.
+- Using MUI's `Box` and `Typography` for layout and typography management.
+- Structuring and organizing components in a React-Next.js application for scalability.
+- Applying responsive design principles to ensure a smooth experience on all devices (desktop, tablet, mobile).
+
+#### Key Code Snippets
+
+```jsx
+// Toggling the display of answers based on the state
+const [showAnswer, setShowAnswer] = useState(false);
+
+<Button onClick={() => setShowAnswer(!showAnswer)}>
+  {showAnswer ? "-" : "+"}
+</Button>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```css
+/* Styling for mobile-first responsiveness */
+@media (max-width: 768px) {
+  .faq-container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Continued Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+For future improvements, I plan to focus on:
 
-## Learn More
+- Optimizing the performance of dynamic content rendering as the FAQ list grows.
+- Implementing a smooth animation for answer toggles.
+- Refining the keyboard navigation for a more seamless user experience.
+- Enhancing accessibility with proper ARIA roles and descriptions for better screen reader support.
 
-To learn more about Next.js, take a look at the following resources:
+### Useful Resources
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React Docs](https://reactjs.org/docs/getting-started.html) - An essential resource for understanding React's core concepts.
+- [Material-UI Documentation](https://mui.com/) - A great guide for working with Material-UI components.
+- [Frontend Mentor: FAQ Accordion Challenge](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz) - The original challenge that inspired this project.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
+Special thanks to the Frontend Mentor community for providing such a great platform and project challenges. The inspiration for the design came from various similar accordion components used in web applications. I learned a lot from the feedback I received during the process!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
