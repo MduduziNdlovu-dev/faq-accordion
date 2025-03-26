@@ -12,7 +12,8 @@ export default function Home() {
         justifyContent:"center",
         alignItems:"center",
         overflow:"hidden",
-        backgroundColor:"hsl(275, 100%, 97%)"
+        backgroundColor:"hsl(275, 100%, 97%)",
+        
       }}
       >
       <FAQContainer/>
